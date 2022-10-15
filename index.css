@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('fonts/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('fonts/Roboto-Light.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-0 {width: 0%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 649px) {
+    .logo {
+        color: #FFFFFF;
+        font-family: 'Roboto-Bold';
+        text-decoration: none;
+        font-size: 60px;
+        text-align: center;
+    }
+    .startLine {
+        text-align: center;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .adress {
+        visibility: hidden;
+    }
+    .drumsImg {
+        visibility: visible;
+        min-height: 743px;
+        min-width: 480px;
+        max-height: 1115px;
+        max-width: 720px;
+        padding: 0px;
+    }
+    .slogan {
+        margin-top: 100px;
+        font-family: 'Roboto-Bold';
+        font-size: 45px;
+        text-align: center;
+        color: #000000;
+        line-height: 0.95;
+    }
+    .buttonOne {
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 100px;
+        font-family: 'Roboto-Medium';
+        color: #000000;
+    }
+    .row2 {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+    }
+    .row3 {
+        position: absolute;
+        top: 250px;
+        width: 100%;
+    }
+    .row4 {
+        position: absolute;
+        top: 0px;
+        width: 0%;
+    }
+    .row5 {
+        position: absolute;
+        top: 550px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .col-t-0 {width: 0%; margin: 0}
+    .col-t-05{width: 4.165%; margin: 0;}
+    .col-t-1 {width: 8.33%; margin: 0;}
+    .col-t-15 {width: 12.5%; margin: 0;}
+    .col-t-2 {width: 16.66%; margin: 0;}
+    .col-t-3 {width: 25%; margin: 0;}
+    .col-t-4 {width: 33.33%; margin: 0;}
+    .col-t-5 {width: 41.66%; margin: 0;}
+    .col-t-55 {width: 45.833%; margin: 0;}
+    .col-t-6 {width: 50%; margin: 0;}
+    .col-t-7 {width: 58.33%; margin: 0;}
+    .col-t-8 {width: 66.66%; margin: 0;}
+    .col-t-9 {width: 75%; margin: 0;}
+    .col-t-10 {width: 83.33%; margin: 0;}
+    .col-t-11 {width: 91.66%; margin: 0;}
+    .col-t-12 {width: 100%; margin: 0;}
+    .drumsImg {
+        visibility: hidden;
+        min-height: 743px;
+        min-width: 480px;
+        max-height: 1000px;
+        max-width: 720px;
+        padding: 0px;
+    }
+    .adress {
+        visibility: visible;
+        text-align: center;
+        font-family: 'Roboto-Medium';
+        font-size: 20px;
+    }
+    .logo {
+        color: #000000;
+        font-family: 'Roboto-Bold';
+        text-decoration: none;
+        font-size: 85px;
+        text-align: center;
+        line-height: 95%;
+    }
+    .startLine {
+        text-align: center;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        color: #000000;
+    }
+    .slogan {
+        font-family: 'Roboto-Bold';
+        font-size: 45px;
+        text-align: center;
+        color: #000000;
+        line-height: 1;
+    }
+    .buttonOne {
+        text-align: center;
+        background: #8BAFF6;
+        border-radius: 100px;
+        font-family: 'Roboto-Medium';
+        color: #000000;
+    }
+    .row2 {
+        position: absolute;
+        top: 520px;
+        width: 100%;
+    }
+    .row3 {
+        position: absolute;
+        top: 570px;
+        width: 100%;
+    }
+    .row4 {
+        position: absolute;
+        top: 750px;
+        width: 100%;
+    }
+    .row5 {
+        position: absolute;
+        top: 950px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .col-d-0 {width: 0%; margin: 0}
+    .col-d-05{width: 4.165%; margin: 0;}
+    .col-d-1 {width: 8.33%; margin: 0;}
+    .col-d-15 {width: 12.5%; margin: 0;}
+    .col-d-2 {width: 16.66%; margin: 0;}
+    .col-d-3 {width: 25%; margin: 0;}
+    .col-d-4 {width: 33.33%; margin: 0;}
+    .col-d-5 {width: 41.66%; margin: 0;}
+    .col-d-55 {width: 45.833%; margin: 0;}
+    .col-d-6 {width: 50%; margin: 0;}
+    .col-d-7 {width: 58.33%; margin: 0;}
+    .col-d-8 {width: 66.66%; margin: 0;}
+    .col-d-9 {width: 75%; margin: 0;}
+    .col-d-10 {width: 83.33%; margin: 0;}
+    .col-d-11 {width: 91.66%; margin: 0;}
+    .col-d-12 {width: 100%; margin: 0;}
+    .drumsImg {
+        visibility: visible;
+        min-height: 743px;
+        min-width: 480px;
+        max-height: 1115px;
+        max-width: 720px;
+        padding: 0px;
+    }
+    .container {
+        background-color: #EE8352;
+        padding-bottom: 50px;
+    }
+    .logo {
+        color: #FFFFFF;
+        font-family: 'Roboto-Bold';
+        text-decoration: none;
+        font-size: 100px;
+        text-align: left;
+    }
+    .startLine {
+        text-align: left;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+    .adress {
+        visibility: visible;
+        text-align: left;
+        font-family: 'Roboto-Light';
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+    .slogan {
+        margin-top: 100px;
+        font-family: 'Roboto-Bold';
+        font-size: 45px;
+        text-align: center;
+        color: #000000;
+        line-height: 0.95;
+    }
+    .buttonOne {
+        text-align: center;
+        background: #FFFFFF;
+        border-radius: 100px;
+        font-family: 'Roboto-Medium';
+        color: #000000;
+    }
+    .row2 {
+        position: absolute;
+        top: 200px;
+        width: 100%;
+    }
+    .row3 {
+        position: absolute;
+        top: 250px;
+        width: 100%;
+    }
+    .row4 {
+        position: absolute;
+        top: 500px;
+        width: 100%;
+    }
+    .row5 {
+        position: absolute;
+        top: 600px;
+        width: 100%;
+    }
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    position: relative;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.row1 {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.buttonTwo {
+    text-align: center;
+    background: #8BAFF6;
+    border-radius: 100px;
+    font-family: 'Roboto-Medium';
+    color: #000000;
+}
+
+.buttonTwo:hover {
+    background: #C7DBFC;
+}
+
+.buttonOne:active {
+    background: #4DB6AC;
+}
+
+.buttonTwo:active {
+    background: #BA68C8;
+}
+
+.buttonlink {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.legal {
+    margin-top: 100px;
+    font-family: 'Roboto-Light';
+    font-size: 11px;
+    text-align: center;
+    color: #535353;
+}
+
+body {
+    margin: 0px;
+}

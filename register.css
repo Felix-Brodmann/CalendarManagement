@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('fonts/Roboto-Light.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-0 {width: 0%;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (min-width: 600px) {
+    .col-d-0 {width: 0%; margin: 0}
+    .col-d-05{width: 4.165%; margin: 0;}
+    .col-d-1 {width: 8.33%; margin: 0;}
+    .col-d-2 {width: 16.66%; margin: 0;}
+    .col-d-3 {width: 25%; margin: 0;}
+    .col-d-4 {width: 33.33%; margin: 0;}
+    .col-d-5 {width: 41.66%; margin: 0;}
+    .col-d-6 {width: 50%; margin: 0;}
+    .col-d-7 {width: 58.33%; margin: 0;}
+    .col-d-8 {width: 66.66%; margin: 0;}
+    .col-d-9 {width: 75%; margin: 0;}
+    .col-d-10 {width: 83.33%; margin: 0;}
+    .col-d-11 {width: 91.66%; margin: 0;}
+    .col-d-12 {width: 100%; margin: 0;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.questionnaire {
+    font-family: 'Roboto-Light';
+    font-size: 14px;
+}
+
+.input {
+    width: 100%;
+    padding: 20px 12px;
+    border: 1px solid #949494;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Roboto-Light';
+}
+
+.input:hover {
+    border: 2px solid #767676;
+}
+
+.input:focus {
+    outline: none !important;
+    border: 2px solid #9C27B0;
+    caret-color: #4A148C;
+    color: #9C27B0;
+}
+
+[class*="error"] {
+    font-family: 'Roboto-Light';
+    font-size: 0px;
+    color: #EE0004;
+}
+
+.VornameInput:invalid{
+    color:red;
+    border: 2px solid #EE0004;
+}
+.VornameInput:invalid + .errorVorname{
+    font-size: 11px;
+}
+
+.NachnameInput:invalid{
+    color:red;
+    border: 2px solid #EE0004;
+}
+.NachnameInput:invalid + .errorNachname{
+    font-size: 11px;
+}
+
+.PasswortInput:invalid{
+    color:red;
+    border: 2px solid #EE0004;
+}
+.PasswortInput:invalid + .errorPasswort{
+    font-size: 11px;
+}
+
+.submit {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    background: #9C27B0;
+    border: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Roboto-Bold';
+    font-size: 16px;
+    padding: 15px;
+}
+
+.submit:hover {
+    background: #4A148C;
+}
+
+.submit:active {
+    background: #BA68C8;
+}

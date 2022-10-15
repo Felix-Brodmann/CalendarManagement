@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-1 col-d-4 placeholder"></div>
+        <a href="index.html"><img src="logo.png" alt="logo" class="col-10 col-d-4"></a>
+        <div class="col-1 col-d-4 placeholder"></div>
+    </div>
+    <div class="row col-12 col-d-12" style="height: 2px;"></div>
+
+    <div class="row">
+        <div class="col-1 col-d-5 placeholder"></div>
+        <form class="col-10 col-d-2" action="register.php" method="post">
+
+            <div class="inputVorname">
+                <label class="questionnaire VornameLabel" id="Vorname"><p>Vorname</p></label>
+                <input type="text" name="forname" class="input VornameInput" pattern="[A-Za-z]{1,}">
+                <p class="errorVorname">Bitte überprüfen sie ihre Angaben!</p>
+            </div>
+            <div class="inputNachname">
+                <label class="questionnaire" id="Nachname"><p>Nachname</p></label>
+                <input type="text" name="name" class="input NachnameInput" pattern="[A-Za-z]{1,}">
+                <p class="errorNachname">Bitte überprüfen sie ihre Angaben!</p>
+            </div>
+            <div class="inputPasswort">
+                <label class="questionnaire" id="Passwort"><p>Passwort</p></label>
+                <input type="password" name="password" class="input PasswortInput" pattern=".{6,}">
+                <p class="errorPasswort">Passwort muss aus mindestens 6 Zeichen bestehen!!</p>
+            </div>
+
+            <div style="height: 25px;"></div>
+
+            <input class="submit" type="submit" value="Registrieren">
+        </form>
+        <div class="col-1 col-d-5 placeholder"></div>
+    </div>
+</body>
+</html>
