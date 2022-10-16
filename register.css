@@ -100,6 +100,14 @@
     font-size: 11px;
 }
 
+.EmailInput:invalid{
+    color:red;
+    border: 2px solid #EE0004;
+}
+.EmailInput:invalid + .errorEmail{
+    font-size: 11px;
+}
+
 .PasswortInput:invalid{
     color:red;
     border: 2px solid #EE0004;

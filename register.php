@@ -11,14 +11,18 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$forname = $name = $userpassword = "";
-    $forname = $_POST["forname"];
-    $name = $_POST["name"];
-    $userpassword = $_POST["password"];
-    $hashedpassword = password_hash($userpassword, PASSWORD_DEFAULT);
+$email = $forname = $name = $userpassword = "";
+  $email = $_POST["email"];
+  $forname = $_POST["forname"];
+  $name = $_POST["name"];
+  $userpassword = $_POST["password"];
+  $hashedpassword = password_hash($userpassword, PASSWORD_DEFAULT);
 
-$sql = "INSERT INTO accounts (Forname, Name, Password)
-VALUES ('$forname','$name','$hashedpassword');";
+date_default_timezone_set('Europe/Berlin');
+$date = date('Y-m-d H:i:s', time());
+
+$sql = "INSERT INTO user (email, password, forname, name, created_at, updated_at) 
+VALUES ('$email','$hashedpassword','$forname','$name','$date','$date');".PHP_EOL;
 
 if (mysqli_query($conn, $sql)) {
 
@@ -26,5 +30,5 @@ if (mysqli_query($conn, $sql)) {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 mysqli_close($conn);
-header('Location: https://volkmarschneider.000webhostapp.com/index.html');
+header('Location: https://volkmarschneider.000webhostapp.com/login.html');
 ?>
